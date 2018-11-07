@@ -6,9 +6,9 @@ networks:
 services:
     loopback_app:
         container_name: "uniwork-loopback"
-        image: xcyxiner/node:latest
+        image: xcyxiner/node:8.9.0
         volumes:
-            - ./path/to/source/code:/usr/src/app
+            - ./source/code:/usr/src/app
         #external_links:
         #    - mongo-1-1:mongo-1-1
 #        entrypoint: slc run
