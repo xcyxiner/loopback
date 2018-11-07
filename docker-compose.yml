@@ -1,0 +1,21 @@
+version: '2'
+networks:
+  default:
+    external:
+      name: testwifi
+services:
+    loopback_app:
+        container_name: "uniwork-loopback"
+        image: xcyxiner/node:latest
+        volumes:
+            - ./path/to/source/code:/usr/src/app
+        #external_links:
+        #    - mongo-1-1:mongo-1-1
+#        entrypoint: slc run
+        entrypoint: node server/server.js
+#        entrypoint: pm2 start server/server.js -i max --no-daemon
+        environment: 
+            - NODE_ENV=production
+        ports:
+            - "3000:3000"
+        restart: always
