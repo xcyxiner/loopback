@@ -1,1 +1,1 @@
-docker build -t xcyxiner/node:8.9.0 .
+docker build -t xcyxiner/loopback:8.9.0 .
