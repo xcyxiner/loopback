@@ -6,7 +6,7 @@ networks:
 services:
     loopback_app:
         container_name: "uniwork-loopback"
-        image: xcyxiner/node:8.9.0
+        image: xcyxiner/loopback:8.9.0
         volumes:
             - ./source/code:/usr/src/app
         #external_links:
