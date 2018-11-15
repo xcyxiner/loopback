@@ -1,1 +1,1 @@
-docker run -v $(pwd):/usr/src/app  --rm -it xcyxiner/node:8.9.0 /bin/bash
+docker run -v $(pwd)/source/code:/usr/src/app  --rm -it xcyxiner/loopback:8.9.0 /bin/bash
